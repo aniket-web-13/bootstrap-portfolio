@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Urbanist", serif !important; 
+}
+.bg-img{
+    background-image: url(../assets/png/banner-bg-.png) !important;
+    // height: 100vh !important;
+}
+
+.btn{
+    background-color: #5777FF !important;
+    padding: 16px 30px !important;
+    color: White !important;
+    font-size: 1.125rem !important;
+}
+
+.navbar-collapse ul li{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+}
+h1{
+    // font-size: 100px !important;
+    text-transform: uppercase !important;
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
+}
+span{
+    color: #5777FF !important;
+}
+p{
+    font-size: 1.125rem !important;
+}

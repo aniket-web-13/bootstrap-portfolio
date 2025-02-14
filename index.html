@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- sass link -->
+     <link rel="stylesheet" href="./dist/style.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <main class="bg-img">
+        <nav class="navbar navbar-expand-lg container-fluid">
+            <div class="container p-3">
+                <a class="navbar-brand fw-bolder" href="#">Kira-Design</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto mx-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" href="#">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Multipages</a></li>
+                            <li><a class="dropdown-item" href="#">Onepages</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">                      
+                    <button class="btn btn-outline-success rounded-pill d-flex align-items-center gap-3" type="submit">
+                        Let's Talk
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </button>                
+                </form>
+              </div>
+            </div>
+          </nav>
+        <header class="py-5">
+            <div class="container text-center">
+                <h1 class="display-1">I'M <span>Aniket</span>
+                    <img style="max-width: 90px;" class="" src="./assets/png/std-head.png" alt="">
+                    bhalerao full stack
+                    <img style="max-width: 230px;" class="rounded-pill" src="./assets/png/eye-head.png" alt="">
+                    <span>web</span>&nbsp; <br>devloper
+                </h1>
+               <div class="py-4">
+                    <video class="w-100 rounded-4" src="./assets/video/web-devlopment.mp4" loop autoplay muted></video>
+               </div>
+            </div>           
+        </header>
+        <section>
+            <div class="container py-5">
+                <div class="row" id="numCount"></div>
+            </div>
+        </section>
+        <section style="background-color: #F9FAFF;" class="container-fluid py-5">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="h1 fw-bolder">My Quality Services</h2>
+                    <p>Development your website, a comprehensive guide to designing a website that <br> converts visitors into customers in Flixta.</p>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img style="width: 570px;" src="./assets/png/services-bg.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <div class="accord-count w-100" >
+                            <div class="accordion accordion-flush d-flex flex-column gap-3 " id="accordionFlushExample"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
