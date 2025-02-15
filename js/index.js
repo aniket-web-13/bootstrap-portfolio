@@ -23,7 +23,7 @@ let numData = [
 numData.map((value) => {
   numCount.innerHTML += `
         <div class="col-6 col-md-6 col-lg-6 col-xl-3 px-5 d-flex align-items-center justify-content-center gap-3">
-            <span class="fw-bold h1">${value.num}+</span><p class="px-4 fw-bold" d-flex flex-column >${value.desc}</p>
+            <span class="fw-bold display-3">${value.num}+</span><p class="px-4 fw-bold" d-flex flex-column >${value.desc}</p>
         </div>
     `;
 });
@@ -80,3 +80,44 @@ accordData.map((value,i) => {
     
     `
 })
+
+
+const carousalCount = document.getElementById("carousalCount");console.log(carousalCount);
+
+let carousalInfo = [
+  {
+    src:"./assets/png/carousal-img-1.png",
+    title:"API Devlopment",
+  },
+  {
+    src:"./assets/png/carousal-img-2.png",
+    title:"Web Devlopment",
+  },
+  {
+    src:"./assets/png/carousal-img-3.png",
+    title:"React Devlopment",
+  },
+  {
+    src:"./assets/png/carousal-img-4.png",
+    title:"Java Devlopment",
+  },
+]
+
+carousalInfo.map((value) => {
+  carousalCount.innerHTML += `
+
+  <div style="background-image: url();" class="caro-card">
+      <div style="background-image: url(${value.src}); background-repeat: no-repeat; background-position: center;"
+          class="col-11 d-flex flex-column align-items-start justify-content-end  h-100 mx-auto bg-primary">                            
+         <div class="mx-2">
+            <p class="m-0 fw-bold text-white">Mern Stack</p>
+            <h3 class="fw-bolder text-white">${value.title}</h3>
+         </div>
+      </div>
+  </div>
+
+`
+})
+
+
+
