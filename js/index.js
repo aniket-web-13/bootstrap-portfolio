@@ -59,8 +59,8 @@ let accordData = [
   },
 ];
 
-accordData.map((value,i) => {
-    accordCount.innerHTML += `
+accordData.map((value, i) => {
+  accordCount.innerHTML += `
     
 <div >
     <div style="width:100%;">
@@ -78,30 +78,30 @@ accordData.map((value,i) => {
     </div>
 </div>
     
-    `
-})
+    `;
+});
 
-
-const carousalCount = document.getElementById("carousalCount");console.log(carousalCount);
+const carousalCount = document.getElementById("carousalCount");
+console.log(carousalCount);
 
 let carousalInfo = [
   {
-    src:"./assets/png/carousal-img-1.png",
-    title:"API Devlopment",
+    src: "./assets/png/carousal-img-1.png",
+    title: "API Devlopment",
   },
   {
-    src:"./assets/png/carousal-img-2.png",
-    title:"Web Devlopment",
+    src: "./assets/png/carousal-img-2.png",
+    title: "Web Devlopment",
   },
   {
-    src:"./assets/png/carousal-img-3.png",
-    title:"React Devlopment",
+    src: "./assets/png/carousal-img-3.png",
+    title: "React Devlopment",
   },
   {
-    src:"./assets/png/carousal-img-4.png",
-    title:"Java Devlopment",
+    src: "./assets/png/carousal-img-4.png",
+    title: "Java Devlopment",
   },
-]
+];
 
 carousalInfo.map((value) => {
   carousalCount.innerHTML += `
@@ -116,8 +116,15 @@ carousalInfo.map((value) => {
       </div>
   </div>
 
-`
-})
+`;
+});
+
+let workExp = document.getElementById("workExp");console.log(workExp);
+let secEducation = document.getElementById("secEducation");console.log(secEducation);
+
+
+
+
 
 
 

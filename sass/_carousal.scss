@@ -1,12 +1,11 @@
-.caro-card{
-    // min-width: 283px !important;
-    // max-width: 420px !important;
-    min-height: 532px !important;
-    flex: 1;
-    transition: all 0.5s ease;
+.caro-card {
+  // min-width: 283px !important;
+  // max-width: 420px !important;
+  min-height: 532px !important;
+  flex: 1;
+  transition: all 0.8s ease;
 
-    &:hover{
-        flex: 1.5;
-    }
-
+  &:hover {
+    flex: 1.5;
+  }
 }
