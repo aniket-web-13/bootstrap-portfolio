@@ -119,30 +119,30 @@ carousalInfo.map((value) => {
 `;
 });
 
-let workExp = document.getElementById("workExp");console.log(workExp);
+let workExp = document.getElementById("workExp"); console.log(workExp);
 
 let workExpInfo = [
   {
-    titleLeft:"Web Developer",
-    descLeft:"2021 - 20023 (Present)",
-    titleRight:"Envato Marketplace",
-    descRight:""
+    titleLeft: "Web Developer",
+    descLeft: "2021 - 20023 (Present)",
+    titleRight: "Envato Marketplace",
+    descRight: ""
   },
   {
-    titleLeft:"Online Marketing",
-    descLeft:"",
-    titleRight:"Sr. Developer",
-    descRight:"2019 - 2020"
-  },  {
-    titleLeft:"UI/UX Designer",
-    descLeft:"2018 - 2019",
-    titleRight:"Dribbble",
-    descRight:""
-  },  {
-    titleLeft:"Upwork Market",
-    descLeft:"",
-    titleRight:"Jr. Developer",
-    descRight:"2016 - 2017"
+    titleLeft: "Online Marketing",
+    descLeft: "",
+    titleRight: "Sr. Developer",
+    descRight: "2019 - 2020"
+  }, {
+    titleLeft: "UI/UX Designer",
+    descLeft: "2018 - 2019",
+    titleRight: "Dribbble",
+    descRight: ""
+  }, {
+    titleLeft: "Upwork Market",
+    descLeft: "",
+    titleRight: "Jr. Developer",
+    descRight: "2016 - 2017"
   },
 ]
 
@@ -169,31 +169,31 @@ workExpInfo.map((value) => {
   `
 })
 
-let secEducation = document.getElementById("secEducation");console.log(secEducation);
+let secEducation = document.getElementById("secEducation"); console.log(secEducation);
 
 
 let educationInfo = [
   {
-    titleLeft:"Web Design Course",
-    descLeft:"2021 - 20023 (Present)",
-    titleRight:"University of California",
-    descRight:""
+    titleLeft: "Web Design Course",
+    descLeft: "2021 - 20023 (Present)",
+    titleRight: "University of California",
+    descRight: ""
   },
   {
-    titleLeft:"University of California",
-    descLeft:"",
-    titleRight:"Bsc In CSE",
-    descRight:"2016 - 2020"
-  },  {
-    titleLeft:"Diploma In CSE",
-    descLeft:"2016 - 2016",
-    titleRight:"University of California",
-    descRight:""
-  },  {
-    titleLeft:"University of California",
-    descLeft:"",
-    titleRight:"Higher Secondary",
-    descRight:"2010 - 2012"
+    titleLeft: "University of California",
+    descLeft: "",
+    titleRight: "Bsc In CSE",
+    descRight: "2016 - 2020"
+  }, {
+    titleLeft: "Diploma In CSE",
+    descLeft: "2016 - 2016",
+    titleRight: "University of California",
+    descRight: ""
+  }, {
+    titleLeft: "University of California",
+    descLeft: "",
+    titleRight: "Higher Secondary",
+    descRight: "2010 - 2012"
   },
 ]
 
@@ -221,6 +221,51 @@ educationInfo.map((value) => {
 })
 
 
+let workSkills = document.getElementById("workSkills"); console.log(workSkills);
 
+let skillsInfo = [
+  {
+    src: "./assets/png/wordpress-icon.png",
+    skillName: "Wordpress",
+    skillPercent: "90%",
+  },
+  {
+    src: "./assets/png/react-icon.png",
+    skillName: "React",
+    skillPercent: "98%",
+  },
+  {
+    src: "./assets/png/python-icon.png",
+    skillName: "Python",
+    skillPercent: "95%",
+  }, {
+    src: "./assets/png/html-icon.png",
+    skillName: "HTML",
+    skillPercent: "85%",
+  }, {
+    src: "./assets/png/figma-icon.png",
+    skillName: "Figma",
+    skillPercent: "70%",
+  },
+]
+
+skillsInfo.map((value) => {
+  workSkills.innerHTML += `
+  
+  <div style="background-color: #F9FAFF;"
+      class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border py-5 px-3 rounded-3">
+      <div class="d-flex flex-column align-items-center justify-content-between gap-4">
+          <img class="w-25 card-img-top" src=${value.src  } alt="">
+          <h4 class="fw-bolder">${value.skillName}</h4>
+          <div style="height: 40px; background-color: #F2F4FF;" class="w-100 rounded-pill border">
+              <div style="width: ${value.skillPercent};" class="h-100 bg-white rounded-pill d-flex align-items-center justify-content-center fw-bold">
+                  ${value.skillPercent}
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  `
+})
 
 
