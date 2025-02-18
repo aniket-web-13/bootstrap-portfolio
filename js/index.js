@@ -120,9 +120,105 @@ carousalInfo.map((value) => {
 });
 
 let workExp = document.getElementById("workExp");console.log(workExp);
+
+let workExpInfo = [
+  {
+    titleLeft:"Web Developer",
+    descLeft:"2021 - 20023 (Present)",
+    titleRight:"Envato Marketplace",
+    descRight:""
+  },
+  {
+    titleLeft:"Online Marketing",
+    descLeft:"",
+    titleRight:"Sr. Developer",
+    descRight:"2019 - 2020"
+  },  {
+    titleLeft:"UI/UX Designer",
+    descLeft:"2018 - 2019",
+    titleRight:"Dribbble",
+    descRight:""
+  },  {
+    titleLeft:"Upwork Market",
+    descLeft:"",
+    titleRight:"Jr. Developer",
+    descRight:"2016 - 2017"
+  },
+]
+
+workExpInfo.map((value) => {
+  workExp.innerHTML += `
+  
+  <div class=" position-relative d-flex align-items-start  justify-content-between">
+      <div class="pb-5">
+          <h5 class="fw-bolder">${value.titleLeft}</h5>
+          <p>${value.descLeft}</p>
+      </div>
+      <div class="position-absolute start-50">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div style="border: 1px dashed;" class="rounded-circle py-1 px-2 border-black"><span style="background-color: #5777ff; padding: 1px 10px;" class="rounded-circle"></span></div>
+          <div style="border: 1px dashed black; width: 0px; height: 90px;"></div>
+        </div>
+      </div>      
+      <div class="pb-5">
+          <h5 class="fw-bolder">${value.titleRight}</h5>
+          <p>${value.descRight}</p>
+      </div>
+  </div>
+  
+  `
+})
+
 let secEducation = document.getElementById("secEducation");console.log(secEducation);
 
 
+let educationInfo = [
+  {
+    titleLeft:"Web Design Course",
+    descLeft:"2021 - 20023 (Present)",
+    titleRight:"University of California",
+    descRight:""
+  },
+  {
+    titleLeft:"University of California",
+    descLeft:"",
+    titleRight:"Bsc In CSE",
+    descRight:"2016 - 2020"
+  },  {
+    titleLeft:"Diploma In CSE",
+    descLeft:"2016 - 2016",
+    titleRight:"University of California",
+    descRight:""
+  },  {
+    titleLeft:"University of California",
+    descLeft:"",
+    titleRight:"Higher Secondary",
+    descRight:"2010 - 2012"
+  },
+]
+
+educationInfo.map((value) => {
+  secEducation.innerHTML += `
+  
+  <div class=" position-relative d-flex align-items-start  justify-content-between">
+      <div class="pb-5">
+          <h5 class="fw-bolder">${value.titleLeft}</h5>
+          <p>${value.descLeft}</p>
+      </div>
+      <div class="position-absolute start-50">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div style="border: 1px dashed;" class="rounded-circle py-1 px-2 border-black"><span style="background-color: #5777ff; padding: 1px 10px;" class="rounded-circle"></span></div>
+          <div style="border: 1px dashed black; width: 0px; height: 90px;"></div>
+        </div>
+      </div>      
+      <div class="pb-5">
+          <h5 class="fw-bolder">${value.titleRight}</h5>
+          <p>${value.descRight}</p>
+      </div>
+  </div>
+  
+  `
+})
 
 
 
