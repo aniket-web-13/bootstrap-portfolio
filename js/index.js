@@ -23,8 +23,8 @@ let numData = [
 
 numData.map((value) => {
   numCount.innerHTML += `
-        <div class="col-6 col-md-6 col-lg-6 col-xl-3 px-5 d-flex align-items-center justify-content-center gap-3">
-            <span class="fw-bold display-3">${value.num}+</span><p class="px-4 fw-bold" d-flex flex-column >${value.desc}</p>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-3 px-5 d-flex align-items-center justify-content-between gap-3">
+            <span class="fw-bold display-3">${value.num}+</span><p class="px-4 m-0 fw-bold" d-flex flex-column >${value.desc}</p>
         </div>
     `;
 });
@@ -84,7 +84,7 @@ accordData.map((value, i) => {
 });
 // ---------------------------------------------------------------------------//
 
-// section 3 carousal recent my work 
+// section 3 carousal recent my work
 const carousalCount = document.getElementById("carousalCount");
 console.log(carousalCount);
 
@@ -107,50 +107,53 @@ let carousalInfo = [
   },
 ];
 
-// carousalInfo.map((value) => {
-//   carousalCount.innerHTML += `
+carousalInfo.map((value) => {
+  carousalCount.innerHTML += `
 
-//   <div style="background-image: url();" class="caro-card">
-//       <div style="background-image: url(${value.src}); background-repeat: no-repeat; background-position: center;"
-//           class="col-11 d-flex flex-column align-items-start justify-content-end  h-100 mx-auto bg-primary">                            
-//          <div class="mx-2">
-//             <p class="m-0 fw-bold text-white">Mern Stack</p>
-//             <h3 class="fw-bolder text-white">${value.title}</h3>
-//          </div>
-//       </div>
-//   </div>
+  <div class="caro-card">
+      <div style="background-image: url(${value.src}); background-repeat: no-repeat; background-position: center;"
+          class="col-6 col-lg-6 col-xl-11 d-flex flex-column align-items-start justify-content-end  h-100 mx-auto flex-lg-{grow|shrink}-0">                            
+         <div class="mx-2">
+            <p class="m-0 fw-bold text-white">Mern Stack</p>
+            <h3 class="fw-bolder text-white">${value.title}</h3>
+         </div>
+      </div>
+  </div>
 
-// `;
-// });
+`;
+});
 // ---------------------------------------------------------------------------//
 
 // section 4 left side work experience
-let workExp = document.getElementById("workExp"); console.log(workExp);
+let workExp = document.getElementById("workExp");
+console.log(workExp);
 
 let workExpInfo = [
   {
     titleLeft: "Web Developer",
     descLeft: "2021 - 20023 (Present)",
     titleRight: "Envato Marketplace",
-    descRight: ""
+    descRight: "",
   },
   {
     titleLeft: "Online Marketing",
     descLeft: "",
     titleRight: "Sr. Developer",
-    descRight: "2019 - 2020"
-  }, {
+    descRight: "2019 - 2020",
+  },
+  {
     titleLeft: "UI/UX Designer",
     descLeft: "2018 - 2019",
     titleRight: "Dribbble",
-    descRight: ""
-  }, {
+    descRight: "",
+  },
+  {
     titleLeft: "Upwork Market",
     descLeft: "",
     titleRight: "Jr. Developer",
-    descRight: "2016 - 2017"
+    descRight: "2016 - 2017",
   },
-]
+];
 
 workExpInfo.map((value) => {
   workExp.innerHTML += `
@@ -172,37 +175,40 @@ workExpInfo.map((value) => {
       </div>
   </div>
   
-  `
-})
+  `;
+});
 // ---------------------------------------------------------------------------//
 
 // section 4 right side work Education
-let secEducation = document.getElementById("secEducation"); console.log(secEducation);
+let secEducation = document.getElementById("secEducation");
+console.log(secEducation);
 
 let educationInfo = [
   {
     titleLeft: "Web Design Course",
     descLeft: "2021 - 20023 (Present)",
     titleRight: "University of California",
-    descRight: ""
+    descRight: "",
   },
   {
     titleLeft: "University of California",
     descLeft: "",
     titleRight: "Bsc In CSE",
-    descRight: "2016 - 2020"
-  }, {
+    descRight: "2016 - 2020",
+  },
+  {
     titleLeft: "Diploma In CSE",
     descLeft: "2016 - 2016",
     titleRight: "University of California",
-    descRight: ""
-  }, {
+    descRight: "",
+  },
+  {
     titleLeft: "University of California",
     descLeft: "",
     titleRight: "Higher Secondary",
-    descRight: "2010 - 2012"
+    descRight: "2010 - 2012",
   },
-]
+];
 
 educationInfo.map((value) => {
   secEducation.innerHTML += `
@@ -224,12 +230,13 @@ educationInfo.map((value) => {
       </div>
   </div>
   
-  `
-})
+  `;
+});
 // ---------------------------------------------------------------------------//
 
-// section 5 work skills 
-let workSkills = document.getElementById("workSkills"); console.log(workSkills);
+// section 5 work skills
+let workSkills = document.getElementById("workSkills");
+console.log(workSkills);
 
 let skillsInfo = [
   {
@@ -246,16 +253,18 @@ let skillsInfo = [
     src: "./assets/png/python-icon.png",
     skillName: "Python",
     skillPercent: "95%",
-  }, {
+  },
+  {
     src: "./assets/png/html-icon.png",
     skillName: "HTML",
     skillPercent: "85%",
-  }, {
+  },
+  {
     src: "./assets/png/figma-icon.png",
     skillName: "Figma",
     skillPercent: "70%",
   },
-]
+];
 
 skillsInfo.map((value) => {
   workSkills.innerHTML += `
@@ -263,7 +272,7 @@ skillsInfo.map((value) => {
   <div style="background-color: #F9FAFF;"
       class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border py-5 px-3 rounded-3">
       <div class="d-flex flex-column align-items-center justify-content-between gap-4">
-          <img class="w-25 card-img-top" src=${value.src  } alt="">
+          <img class="w-25 card-img-top" src=${value.src} alt="">
           <h4 class="fw-bolder">${value.skillName}</h4>
           <div style="height: 40px; background-color: #F2F4FF;" class="w-100 rounded-pill border">
               <div style="width: ${value.skillPercent};" class="h-100 bg-white rounded-pill d-flex align-items-center justify-content-center fw-bold">
@@ -273,7 +282,6 @@ skillsInfo.map((value) => {
       </div>
   </div>
   
-  `
-})
+  `;
+});
 // ---------------------------------------------------------------------------//
-

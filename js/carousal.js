@@ -1,39 +1,39 @@
+let testimoni = document.getElementById("testimoni");
+console.log(testimoni);
 
-let testimoni = document.getElementById("testimoni");console.log(testimoni);
+let testimoniInfo = [
+  {
+    src: "./assets/jpg/user-thumb-01.jpg",
+    name: "Johnny Deep",
+    post: "Ceo",
+    intervalTime: 10000,
+    act: "active",
+  },
+  {
+    src: "./assets/jpg/user-thumb-02.jpg",
+    name: "Crysta Deep",
+    post: "customer",
+    intervalTime: 2000,
+    act: "",
+  },
+  {
+    src: "./assets/jpg/user-thumb-03.jpg",
+    name: "Jakson S.",
+    post: "customer",
+    intervalTime: 3000,
+    act: "",
+  },
+  {
+    src: "./assets/jpg/user-thumb-04.jpg",
+    name: "Tom Hanks",
+    post: "customer",
+    intervalTime: 4000,
+    act: "",
+  },
+];
 
-let testimoniInfo = [ 
-    {
-        src:"./assets/jpg/user-thumb-01.jpg",
-        name:"Johnny Deep",
-        post:"Ceo",
-        intervalTime:10000,
-        act:"active"
-    },
-    {
-        src:"./assets/jpg/user-thumb-02.jpg",
-        name:"Crysta Deep",
-        post:"customer",
-        intervalTime:2000,
-        act:""
-    },
-    {
-        src:"./assets/jpg/user-thumb-03.jpg",
-        name:"Jakson S.",
-        post:"customer",
-        intervalTime:3000,
-        act:""
-    },
-    {
-        src:"./assets/jpg/user-thumb-04.jpg",
-        name:"Tom Hanks",
-        post:"customer",
-        intervalTime:4000,
-        act:""
-    },
-]
-
-testimoniInfo.map((value) =>{
-    testimoni.innerHTML += `
+testimoniInfo.map((value) => {
+  testimoni.innerHTML += `
     
     <div class="carousel-item ${value.act}" data-bs-interval="${value.intervalTime}">
         <div class="d-flex align-items-center flex-column justify-content-center">
@@ -54,5 +54,5 @@ testimoniInfo.map((value) =>{
         </div>
     </div>    
 
-    `
-})
+    `;
+});
