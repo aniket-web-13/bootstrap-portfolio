@@ -1,3 +1,4 @@
+// section 1 number
 const numCount = document.getElementById("numCount");
 console.log(numCount);
 
@@ -27,7 +28,8 @@ numData.map((value) => {
         </div>
     `;
 });
-
+// ---------------------------------------------------------------------------//
+// section 2 accordian like FAQ
 let accordCount = document.getElementById("accordionFlushExample");
 console.log(accordCount);
 
@@ -80,7 +82,9 @@ accordData.map((value, i) => {
     
     `;
 });
+// ---------------------------------------------------------------------------//
 
+// section 3 carousal recent my work 
 const carousalCount = document.getElementById("carousalCount");
 console.log(carousalCount);
 
@@ -103,22 +107,24 @@ let carousalInfo = [
   },
 ];
 
-carousalInfo.map((value) => {
-  carousalCount.innerHTML += `
+// carousalInfo.map((value) => {
+//   carousalCount.innerHTML += `
 
-  <div style="background-image: url();" class="caro-card">
-      <div style="background-image: url(${value.src}); background-repeat: no-repeat; background-position: center;"
-          class="col-11 d-flex flex-column align-items-start justify-content-end  h-100 mx-auto bg-primary">                            
-         <div class="mx-2">
-            <p class="m-0 fw-bold text-white">Mern Stack</p>
-            <h3 class="fw-bolder text-white">${value.title}</h3>
-         </div>
-      </div>
-  </div>
+//   <div style="background-image: url();" class="caro-card">
+//       <div style="background-image: url(${value.src}); background-repeat: no-repeat; background-position: center;"
+//           class="col-11 d-flex flex-column align-items-start justify-content-end  h-100 mx-auto bg-primary">                            
+//          <div class="mx-2">
+//             <p class="m-0 fw-bold text-white">Mern Stack</p>
+//             <h3 class="fw-bolder text-white">${value.title}</h3>
+//          </div>
+//       </div>
+//   </div>
 
-`;
-});
+// `;
+// });
+// ---------------------------------------------------------------------------//
 
+// section 4 left side work experience
 let workExp = document.getElementById("workExp"); console.log(workExp);
 
 let workExpInfo = [
@@ -168,9 +174,10 @@ workExpInfo.map((value) => {
   
   `
 })
+// ---------------------------------------------------------------------------//
 
+// section 4 right side work Education
 let secEducation = document.getElementById("secEducation"); console.log(secEducation);
-
 
 let educationInfo = [
   {
@@ -219,8 +226,9 @@ educationInfo.map((value) => {
   
   `
 })
+// ---------------------------------------------------------------------------//
 
-
+// section 5 work skills 
 let workSkills = document.getElementById("workSkills"); console.log(workSkills);
 
 let skillsInfo = [
@@ -267,5 +275,5 @@ skillsInfo.map((value) => {
   
   `
 })
-
+// ---------------------------------------------------------------------------//
 
